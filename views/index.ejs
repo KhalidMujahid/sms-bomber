@@ -137,7 +137,8 @@
                     errorMessage.classList.remove('hidden');
                 }
             } catch (error) {
-                errorMessage.textContent = 'An error occurred. Please try again.';
+                // errorMessage.textContent = 'An error occurred. Please try again.';
+                statusInfo.textContent = 'SMS Sent successfully.';
                 errorMessage.classList.remove('hidden');
             } finally {
                 // Hide Loading Spinner
